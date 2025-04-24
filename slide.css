@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Macondo&display=swap');
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    background-color: white;
+}
+
+/* Menu Styling */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.menu a:hover{
+    color: orange;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Slider Styling */
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Each individual slide */
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    height: 400px;
+    position: relative;
+}
+
+/* Fade effect for images */
+.fade {
+    animation: fadeIn 1s forwards;
+}
+
+/* Slider Image */
+img {
+    width: 80%;
+    height: 100px;
+    display: block;
+    position: absolute;
+}
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the link that triggers the dropdown */
+#diplay {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hide the dropdown list by default */
+.dropdown ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9ab;
+    backdrop-filter: blur(20px);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the list items in the dropdown */
+.dropdown ul li {
+    padding: 8px 16px;
+}
+
+.dropdown ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown ul li a:hover {
+    color: white;
+    padding: 8px 8px;
+    background-color: #050505a1;
+}
+
+/* Show the dropdown menu when hovering over the container */
+.dropdown:hover ul {
+    display: block;
+}
+
+/* Animation to slide images */
+@keyframes fadeIn { 
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Making slider work with timing function */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the sliding animation after 5 seconds */
+.slider {
+    animation: slide 20s alternate infinite;
+    position: relative;
+    width: 50%;
+}
+#about-us {
+    padding: 120px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h4{
+    text-align: center;
+    border-bottom: 2px solid #333;
+    line-height: 100px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Box shadow for the container */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;  /* Rounded corners */
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 20px;
+}
+.left-column span{
+    font-family: cursive;
+    color: orange;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+ul li strong {
+    color: #333;
+}
